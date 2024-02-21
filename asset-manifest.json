@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/branclever/static/css/main.2f70ac99.css",
+    "main.js": "/branclever/static/js/main.f8a650f1.js",
+    "static/js/787.aadca95f.chunk.js": "/branclever/static/js/787.aadca95f.chunk.js",
+    "static/media/contact-us.jpg": "/branclever/static/media/contact-us.4f34fa3d8ccb3e229b8e.jpg",
+    "static/media/slick.svg": "/branclever/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/branclever/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/branclever/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "index.html": "/branclever/index.html",
+    "static/media/slick.woff": "/branclever/static/media/slick.295183786cd8a1389865.woff",
+    "main.2f70ac99.css.map": "/branclever/static/css/main.2f70ac99.css.map",
+    "main.f8a650f1.js.map": "/branclever/static/js/main.f8a650f1.js.map",
+    "787.aadca95f.chunk.js.map": "/branclever/static/js/787.aadca95f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2f70ac99.css",
+    "static/js/main.f8a650f1.js"
+  ]
+}
