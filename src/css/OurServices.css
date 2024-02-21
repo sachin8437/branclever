@@ -1,0 +1,70 @@
+/************* Our Services Section start **********************/
+.our-services {
+    padding: 56px 20px 60px !important;
+    background: #e5e5e5;
+}
+.our-services .services-inner h2 {
+    text-align: center;
+    color: #000;
+    padding-bottom: 8px;
+    font-weight: 600;
+    font-size: 36px;
+}
+.our-services .services-inner p {
+    text-align: center;
+    color: #585858;
+    font-weight: 400;
+    font-size: 16px;
+}
+.service-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.service-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.service-row .col {
+    background-color: #fff;
+    padding: 20px 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px #9797971a;
+}
+.service-row .col p {
+    color: #000;
+    text-align: left;
+    padding-top: 5px;
+}
+.service-row .col img {
+    width: 30%;
+}
+.read-btn a {
+    display: block;
+    padding: 10px 23px;
+    background: #54a154;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #fff;
+    text-align: center;
+    width: 10%;
+    text-decoration: none;
+    margin: 30px auto 50px;
+}
+.services-inner h2, .services-inner p {
+    padding-bottom: 15px;
+}
+.service-row h3 {
+    color: #121212 !important;
+    font-weight: 500;
+    margin-bottom: 0;
+    font-size: 26px;
+    margin-top: 10px;
+}
+.service-row h3:hover {
+    color: #000;
+}
+/************* Our Services Section End **********************/

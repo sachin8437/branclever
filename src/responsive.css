@@ -1,0 +1,224 @@
+
+
+/********** Tushar css Start here ***********/
+@media screen and (max-width: 1300px) {
+    .inner_header_nav {
+        justify-content: space-around;
+    }
+    .inner_header_nav nav {
+        gap: 10px;
+    }
+    .inner_header_nav nav ul {
+        gap: 9px;
+        margin-left: -20px;
+    } 
+    .our-services .services-inner p.litle-des {
+        width: auto;
+    }
+    .main-sub {
+        width: auto;
+    }
+    .faq-main {
+        width: auto;
+    }
+    .colun_frelance {
+        width: 980px !important;
+    }
+    .main-sub .databaseIcon.Subject-M {
+        margin-left: 25px;
+    }
+    .four-columns {
+        margin: -50px 20px 20px 20px !important;
+    }
+}
+
+    @media screen and (max-width: 1024px) {
+        .form-left.col-6 {
+            padding: 50px 0px 50px 50px;
+        }
+        .main-sub .database_right {
+            display: block !important;
+        }
+        .faq-inner {
+            display: block;
+            padding: 0rem 0 0;
+        }
+        .service-row .col {
+           
+            width: 46%;
+            margin-left: 22px;
+            float: left;
+            margin-bottom: 22px;
+        }
+        .service-row {
+            display: block !important;
+        }
+        .main-sub {
+            display: block;
+            height: 680px;
+            padding: 0px 50px 50px 50px;
+        }
+        #root > div.page > div.main-sub > div.database_right > div:nth-child(1) {
+            float: left !important;
+            width: 48% !important;
+            margin-left: -8px;
+        }
+        .column-tech img {
+            width: 110px;
+        }
+        #root > div.page > div.main-sub > div.database_right > div:nth-child(3) {
+            width: 48% !important;
+            margin-left: -8px;
+            margin-top: 22px;
+        }
+        .main-sub .databaseIcon.Subject-M {
+            margin-left: 22px;
+            height: 200px;
+            margin-top: 22px;
+            width: 49% !important;
+            float: left;
+        }
+        .content {
+            top: 55% !important;
+        }
+        .banner {
+            height: 500px !important;
+        }
+        .contactForm-inner {
+            justify-content: center;
+            width: 100% !important;
+        }
+        .contactForm-inner .form-group {
+            margin-top: 30px;
+        }
+        .tabs li {
+            width: 120px !important;
+        }
+}  
+/********** Tushar css End here ***********/
+
+
+@media screen and ( device-width: 1024px ) {
+    .four-columns {
+        margin: auto !important;
+        margin-top: -3em !important;
+    }
+
+    .about-content p { 
+        padding: 0px 40px 0px 40px !important;
+    }
+    .banner .content h1 {
+        font-size: 40px !important;
+    }
+
+    .banner .content p { 
+        font-size: 22px; 
+    }
+
+    .our-services .services-inner p.litle-des { 
+        padding: 12px 50px 12px 50px !important;
+    }
+    .main-sub {
+        display: grid !important;
+        grid-template-columns: repeat(1, 1fr) !important;
+        text-align: start !important;
+        width: 100% !important;
+         padding: 0px 50px 50px 68px !important;
+    }
+    .our-services .services-inner p.litle-des {
+        width: 100% !important;
+        margin: 0 auto !important;
+    }
+    .our-services {
+        padding: 32px 20px 47px !important;
+       
+    }
+    .services-inner .service-row .col p {
+        font-size: 14px !important;
+    }
+    .service-row .col {
+        height: 315px !important;
+    }
+    .service-row h3 {
+        font-size: 22px !important;
+    }
+    .colun_frelance {
+        width: 900px !important;
+    }
+    .testimonial.testi_clints {
+        padding-bottom: 100px !important;
+        
+    }
+    .main-sub .database_left h3 {
+        margin-bottom: 0px !important;
+        font-size: 18px !important;
+        font-weight: 400 !important;
+    
+    }
+    .industryDemands-items .col a, h3 {
+        padding-top: 0px !important;
+    }
+    
+    .faq-inner { 
+        grid-template-columns: repeat(2,1fr) !important;
+        padding: 2rem 0 0 !important; 
+        gap: 20px !important;
+        width: 1000px !important;
+    }
+    
+    .faq-main {
+        width: 100% !important;
+        padding: 24px 0;
+    }
+    
+    .faq-item {
+        margin-bottom: 30px !important;
+        width: 800px !important;
+        text-align: center !important;
+    }
+    
+    .faq-main .faq-item {
+        margin: auto !important;
+        margin-bottom: 30px !important;
+    }
+
+     .faq-main h2 {
+        margin-bottom: 0px !important;
+    }   
+    .faq-main .question {
+    
+        display: flex !important;
+        justify-content: space-between !important;
+    }
+    
+    .testimonial-inner .slick-slide div .item {
+        min-height: 593px !important;
+    }
+
+    .service-row .col {
+        height: 350px;
+    }
+    .our-services .services-inner p.litle-des {
+        padding-bottom: 45px;
+    }
+    .colun_frelance {
+        width: 985px !important;
+    }
+    .four-columns.colun_frelance {
+        display: flex;
+        text-align: center;
+        margin: auto !important;
+        margin-top: -5% !important;
+    }
+
+    }
+    
+    
+    
+    
+    
+
+
+
+
+

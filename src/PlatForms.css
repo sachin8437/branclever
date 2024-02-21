@@ -1,0 +1,29 @@
+/* FourColumns.css */
+
+.four-columns {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+  }
+
+  .technology-main .four-columns {
+    grid-template-columns: repeat(5, 1fr) !important;
+    display: grid;
+}
+
+.technology-main h3 {
+  text-align: center;
+  font-size: 36px;
+}
+
+.column-tech img {
+  filter: contrast(0.9);
+}
+
+.column-tech img:hover {
+  filter: grayscale(0);
+}
+
+.technology-main {
+  padding: 57px 18px 31px !important;
+}

@@ -1,0 +1,81 @@
+/* CounterSection.css */
+* {
+    box-sizing: border-box;
+  }
+  /* Float three columns side by side */
+  .counter-section .column {
+    float: left;
+    width: 100%;
+    padding: 0;
+  }
+  .counter-section {
+    margin: 0;
+  }
+  /* Clear floats after the columns */
+  .counter-section:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+   .counter-section .column {
+      width: 30%;
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+  /* Style the counter cards */
+  .counter-section .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #444;
+    color: white;
+  }
+  .counter-section .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #444;
+    color: white;
+    border: 1px solid #ffffff;
+}
+.counter-section .card:hover {
+   border: 1px solid #28a745;
+}
+.row.counter-section {
+    padding-bottom: 50px;
+    width: 50%;
+}
+.row.counter-section span {
+    font: 80px/.8 proxima_nova_altbold;
+    color: #54a154;
+}
+.row.counter-section h3 {
+    font-size: 28px;
+    font-weight: 300;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 9px;
+}
+.card-counter {
+  background: #ffffff;
+  padding: 10px;
+  box-shadow: 2px 2px 13px #cfcfcf;
+  border-radius: 10px;
+  border-top: 1px solid #54a154;
+}
+.bottom-counter {
+    width: 50%;
+    margin: auto;
+}
+/* portfolio page */
+.portfolio-page .portfolio-inner {
+  padding-top: 100px;
+}
+.portfolio-page .banner-heading.protfolio-banner h2 {
+  text-align: center;
+  padding: 100px 0px;
+  background: #101010 !important;
+}
