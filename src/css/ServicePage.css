@@ -1,243 +1,51 @@
-/* Add your existing styles here */
-
-
-  
-  .service .service-inner { 
-    margin: 0 auto;
-  }
-  
-.service .mainTitle {
-  position: relative;
-  top: 25% !important;
-  left: 0px !important;
-  text-align: center;
-  color: #fff;
+.main-services {
+  background-color: #101010;
   padding: 100px 0px;
-  background-color: #101010 !important
+  color: #fff;
+  text-align: center;
 }
-  
-  .service .mainTitle h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
-  }
-  
-  .service .sub-title {
-    font-size: 24px;
-  }
-  
-  .service .main-para {
-    font-size: 18px;
-    margin-bottom: 20px;
-  }
-  
-  .service .call-btn {
-    background-color: #54a154;
-    color: #fff;
-    padding: 10px 20px;
-    font-size: 16px;
-    text-decoration: none;
-    border-radius: 5px;
-    display: inline-block;
-  }
-  
-  .service .call-btn:hover {
-    background-color: #0056b3;
-  }
-  
-  .service .services-second {
-    display: flex;
-    justify-content: space-between;
-    padding: 50px 0px;
-    color: #fff;
-    padding-top: 0px;
-  }
-  .service .first { 
-    justify-content: space-between;
-    width: fit-content;
-  }
-  .service .first div {
-    text-align: center;
-    background: #101010;
-    padding: 15px;
-    margin: 0px 0px 10px;
-    border-radius: 10px;
-  }
-  .content_of_founder p {
-    color: #cdcdcd;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 26px;
-    margin-top: 20px;
-
+section.inner-services {
+  width: 100%;
+  max-width: 1240px;
+  margin: 20px auto 0px;
 }
-  .service .first h3 {
-    font-size: 50px;
-    font-weight: 700;
-    margin-bottom: 0px;
-    padding-top: 0;
-    color: #54a154;
-  }
-  .service .first p {
-    font-size: 18px;
-    margin-bottom: 0;
-    font-weight: 300;
-    margin-top: 20px;
-  }
-  .service .second {
-    width: 50%;
-  }
-  .service .second h4 {
-    font-size: 30px;
-    margin-bottom: 10px;
-    font-weight: 500;
-  }
-  .service .second p {
-    font-size: 16px;
-    margin-bottom: 20px;
-    font-weight: 300;
-  }
-  .service .second h6 {
-    font-size: 30px !important;
-}
-.service .service-row {
+.our-services-all {
+  display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 30px;
+  border-bottom: 1px solid #dee2e6;
+  padding-bottom: 30px;
 }
-  .service .second ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  .service .second li {
-    font-size: 16px;
-    margin-bottom: 5px;
-    font-weight: 300;
-  }
-  .service .third {
-    width: fit-content;
-  }
-  .service .third h2 {
-    font-size: 30px;
-    margin-bottom: 20px;
-    font-weight: 500;
-  }
-  .service .third ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  .service .third li {
-    font-size: 18px;
-    margin-bottom: 10px;
-    font-weight: 300;
-  }
-  .service .services-third {
-    margin-top: 15px;
-  }
-  .service .services-third-container {
-    text-align: center;
-  }
-  .service .services-third h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-  }
-  .service .services-third-main-div {
-    flex-wrap: wrap;
-    justify-content: space-between;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 15px !important;
+.web-development {
+  max-width: 50%;
+  width: 100%;
+  padding: 0px 10px;
 }
-  .service .services-card:hover {
-    box-shadow: 0px 0px 20px 0px #ffffff !important;
+.web-development-image {
+  width: 100%;
+  max-width: 50%;
+  padding: 0px 10px;
 }
-.service .services-card {
-  width: -moz-fit-content;
-  width: fit-content;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s ease-in-out;
+.web-development-image img {
+  width: 100%;
 }
-.service .service-row .col:hover {
-  box-shadow: 0px 0px 20px 0px #ffffff;
+.explantion-tech ul{
+  padding: 0px;
 }
-.service .service-row .col p {
-  color: #000;
-  text-align: center;
-  padding-top: 5px;
+.explantion-tech ul li {
+  list-style-type: none;
+  position: relative;
+  padding-left: 25px;
 }
-  .service .services-card h5 {
-    font-size: 24px;
-    margin-top: 30px;
-}
-  .service .services-card:hover {
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  }
-  .service .icon {
-    width: 50px;
-    height: 50px;
-    background-color: #54a154;
-    border-radius: 50%;
-    margin-bottom: 10px;
-  }
-  .service .icon::before {
-    content: '\f108'; /* Add your icon content here */
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 900;
-    font-size: 24px;
-    color: #fff;
-    line-height: 50px;
-    text-align: center;
-    display: block;
-  }
-  .service .service-inner .our-services .services-inner .read-btn {
-    display: none;
-}
-.services-third-main-div h5, .services-third-main-div p {
-  text-align: center;
-  color: #000;
-}
-.service .service-inner .our-services {
-  padding: 0px 0px 0px !important;
-  background: #000000;
-}
-.service .service-row .col img {
-    width: auto;
-}
-.service .services-inner h2 {
-    color: #fff;
-    font-size: 40px;
-}
-.service .services-inner .litle-des {
-  color: #fff !important;
-  font-size: 16px;
-  padding-bottom: 20px;
-  font-weight: 300;
-}
-.service .hero-image {
-    height: 400px;
-}
-.service .service-row h3 {
-  color: #000 !important;
-    font-weight: 500;
-    margin-bottom: 0;
-    font-size: 24px;
-    margin-top: 10px;
-    text-align: center;
-}
-.service .service-row .col {
-  background-color: #fff;
-  padding: 20px 15px;
-  border-radius: 10px;
-  text-align: center;
-}
-.service .services-inner .service-row .col p {
-  font-size: 12px;
-}
-.career-first-section .main-title p {
-  font-weight: 300;
-  font-size: 16px;
+.explantion-tech ul li::before {
+  content: '';
+  background-image: url(../pages/Assest/list_icon.png);
+  width: 16px;
+  height: 16px;
+  background-size: contain;
+  display: block;
+  position: absolute;
+  left: 0px;
+  top: 4px;
 }

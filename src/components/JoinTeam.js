@@ -18,15 +18,15 @@ export default class JoinTeam extends Component {
             </div>
           </div>
           <div className='right-side grid-images'>
-            <div class="display-flex-wrap">
-              <div class="img-wrap">
+            <div className="display-flex-wrap">
+              <div className="img-wrap">
                 <img src={process.env.PUBLIC_URL + '/images/join/01.jpg'} alt="" />
               </div>
-              <div class="img-wrap">
-                <div class="img-wrap-inner"> 
+              <div className="img-wrap">
+                <div className="img-wrap-inner"> 
                   <img src={process.env.PUBLIC_URL + '/images/join/1.jpg'} alt="" />
                 </div>
-                <div class="img-wrap-inner">
+                <div className="img-wrap-inner">
                   <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/images/join-team-img3.webp" alt="" />
                 </div>
               </div>

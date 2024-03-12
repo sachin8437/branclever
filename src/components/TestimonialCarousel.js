@@ -84,32 +84,34 @@ const TestimonialCarousel = ({testImg}) => {
     ];
   
     const settings = {
-      dots: true,
+      dots: false,
       infinite: true,
       autoplay: false,
-      autoplaySpeed: 5000, 
-      slidesToShow: 3,
+      autoplaySpeed: 3000, 
+      slidesToShow: 1,
       slidesToScroll: 1,
-      arrows: false,
-      centerMode: false,
+      arrows: true,
+      centerMode: true,
       centerPadding: '60px',
       responsive: [
         {
           breakpoint: 768,
           settings: {
             arrows: false,
-            centerMode: true,
+            centerMode: false,
             centerPadding: '40px',
-            slidesToShow: 3
+            slidesToShow: 2,
+            slidesToScroll: 1
           }
         },
-        {
+        { 
           breakpoint: 480,
           settings: {
-            arrows: false,
-            centerMode: true,
-            centerPadding: '40px',
-            slidesToShow: 1
+            dots: false,
+            arrows: false, 
+            vertical: false, 
+            slidesToShow: 1,
+            slidesToScroll: 1,
           }
         }
       ]
@@ -117,24 +119,30 @@ const TestimonialCarousel = ({testImg}) => {
   
     return (
        <div className='testimonial testi_clints'>
-            <div className='container'>
+            <div className='containerd'>
                 <div className='testimonial-inner'>
                 <p className='subtitle'>Testimonial</p>
                 <h3 className='text-center client-say-pd'> WHAT OUR CLIENT’S SAY </h3>
                 <Slider {...settings}> 
                     {testimonials.map(testimonial => (
-                    <div key={testimonial.id} className='item'>
-                        <img src={testimonial.image} alt={testimonial.name} />
-                        <h3>{testimonial.name}</h3>
-                        <p className='country'>{testimonial.country}</p>
-                        <span className='review-date'>{testimonial.date}</span> 
-                        <span className="ti-stars"> <i className="fa fa-star" aria-hidden="true"></i> <i className="fa fa-star" aria-hidden="true"></i> <i className="fa fa-star" aria-hidden="true"></i> <i className="fa fa-star" aria-hidden="true"></i> <i className="fa fa-star" aria-hidden="true"></i></span>
-                        <p>{testimonial.text}</p>
-                        <div className='tecnoLogo'><img src={testimonial.tecnology} alt={testimonial.name} /></div>
-                        
-                    </div> 
+                    <div key={testimonial.id} className='testimonial_modifi'>
+                          <div className='tesi_conte'>
+                                <p> {testimonial.text} </p>
+                                  <div className='testi_iner_prod'>
+                                      <div className='testi_img_con'>
+                                          <div className='profile'>
+                                            <img src={testimonial.image} alt={testimonial.name} />
+                                            <div class="client_text" bis_skin_checked="1">
+                                            <div class="client_name" bis_skin_checked="1">Simon Wing</div><div className="client_des" bis_skin_checked="1">Co-Founder &amp; CEO <br/>EdFundo</div></div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div> 
                     ))} 
                 </Slider>
+
+                
                 </div>
             </div>
       </div>

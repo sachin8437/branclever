@@ -123,9 +123,7 @@
     background: #fff;
     display: flex;
 }
-.career-page .left-vacancyCnt h3, h2 {
-    color: #000;
-}
+ 
 .right-vacancyCnt form span#successMsg {
     color: #28a745;
     text-align: center;

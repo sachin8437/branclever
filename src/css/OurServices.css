@@ -1,38 +1,41 @@
 /************* Our Services Section start **********************/
 .our-services {
-    padding: 56px 20px 60px !important;
-    background: #e5e5e5;
+    padding: 45px 20px 60px !important;
+    background: #fff;
 }
 .our-services .services-inner h2 {
     text-align: center;
     color: #000;
-    padding-bottom: 8px;
+    padding-bottom: 0px;
     font-weight: 600;
     font-size: 36px;
 }
 .our-services .services-inner p {
     text-align: center;
-    color: #585858;
+    color: #000;
     font-weight: 400;
     font-size: 16px;
 }
 .service-row {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 15px;
-}
-.service-row {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 15px;
 }
 .service-row .col {
-    background-color: #fff;
+    background-color: #e5e5e5d1;
     padding: 20px 15px;
     border-radius: 10px;
     box-shadow: 0px 0px 20px 0px #9797971a;
+    border: 1px solid #e1e1e1;
+}
+.oposite ul li {
+    font-size: 13px;
+    line-height: 23px;
+}
+.oposite ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 7px;
 }
 .service-row .col p {
     color: #000;
@@ -40,7 +43,8 @@
     padding-top: 5px;
 }
 .service-row .col img {
-    width: 30%;
+    width: 24%;
+    margin-bottom: 15px;
 }
 .read-btn a {
     display: block;
@@ -58,13 +62,17 @@
     padding-bottom: 15px;
 }
 .service-row h3 {
-    color: #121212 !important;
-    font-weight: 500;
+    font-weight: 400;
     margin-bottom: 0;
-    font-size: 26px;
-    margin-top: 10px;
+    font-size: 24px;
+    margin-top: 20px;
 }
-.service-row h3:hover {
-    color: #000;
+.services-card:hover p {
+    display: none;
+    font-size: 16px;
 }
+.services-card .oposite {
+    display: none;
+}
+
 /************* Our Services Section End **********************/

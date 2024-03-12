@@ -6,20 +6,28 @@ class Faq extends Component {
     // Define your FAQ data
     this.faqs = [
         { 
-            question: 'Do you offer app maintenance and support services?', 
-            answer: 'Yes, we offer comprehensive maintenance and support services tailored to meet your business requirements. Being one of the best mobile app development agencies, our approach is centered around helping you choose the maintenance strategy that best aligns with your needs, ensuring the seamless operation of your software applications.            Our app maintenance services encompass a wide range of offerings, including:Software upgrades as per emerging technologies Automated backups Issue management and response Ongoing support and bug fixes Regular performance and security enhancements Version upgrades Comprehensive user support Performance monitoring' 
+            question: 'What services does Brandclever offer?', 
+            answer: 'Brandclever offers comprehensive IT services including web design & development, software development, IT consulting, cloud solutions, and cybersecurity services.' 
         },
         { 
-            question: 'Do you assist with software integration and data migration?', 
-            answer: 'Yes, we offer end-to-end software integration and data migration services that can simplify your critical business processes. As a dedicated mobile application development company, we ensure using a tailored strategy to optimize the software integration process. We start with a thorough analysis of your business objectives and align them with the most appropriate integration approach. We prioritize non-functional requirements like scalability and security to determine the ideal delivery model and governance structure. Coming to data migration, we ensure that our approach is structured and carefully crafted so as to ensure a seamless transition without compromising data integrity. We begin by assessing your data sources and gaining a comprehensive understanding of their unique characteristics, formats, and security requirements. We then carefully choose the most appropriate method, such as using ETL tools to move data from one database to another or using APIs to link different apps or systems together. Our selection is 100% aligned with your specific data quality, performance, and security needs.' 
+            question: 'How can Brandclever help my business with IT services and consulting?', 
+            answer: 'Brandclever provides strategic IT consulting and customized solutions to streamline operations, enhance productivity, and achieve business objectives through innovative technology.' 
+        }, 
+        { 
+          question: 'How does Brandclever approach client projects?', 
+          answer: 'Brandclever collaborates closely with clients to understand their needs and challenges, providing personalized solutions with a focus on quality and timely delivery.' 
         },
         { 
-            question: 'What is React?', 
-            answer: 'React is a JavaScript library for building user interfaces.' 
+          question: 'Can Brandclever assist with both small-scale and large-scale IT projects?', 
+          answer: 'Yes, Brandclever has the capability and experience to handle projects of all sizes, ensuring successful outcomes regardless of scale.' 
         },
         { 
-            question: 'How do I install React?', 
-            answer: 'You can install React using npm by running: npm install react' 
+          question: 'Does Brandclever provide ongoing support and maintenance for implemented solutions?', 
+          answer: 'Yes, Brandclever offers ongoing support and maintenance services to ensure the continued smooth operation and performance of implemented solutions. ' 
+        },
+        { 
+          question: 'What is the typical project completion timeline with Brandclever?', 
+          answer: 'Project timelines vary based on scope and complexity, with Brandclever committed to delivering projects efficiently while maintaining high standards.' 
         },
       // Add more FAQ items as needed
     ];

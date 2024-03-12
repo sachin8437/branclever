@@ -104,9 +104,15 @@ const Career = () => {
       return;
     }
 
+    // Check if any field in the form has a value
+    const isFormBlank = Object.values(formData).every((value) => value === '');
+
+
      // Proceed with form submission
-     const form = event.target;
-     const formDataToSend = new FormData(form);
+   // If the form is not blank, proceed with form submission
+   if (!isFormBlank) {
+    const form = event.target;
+    const formDataToSend = new FormData(form);
 
     try {
       const response = await fetch(
@@ -119,9 +125,7 @@ const Career = () => {
 
       if (response.ok) {
         console.log('Form data submitted successfully');
-         // Clear success message
-        document.getElementById('successMsg').innerText = '';
-       
+
         // Reset form fields
         setFormData({
           name: '',
@@ -131,7 +135,7 @@ const Career = () => {
           phone: '',
           experience: '',
         });
-      
+
         // Clear error messages
         setFormErrors({
           name: '',
@@ -141,48 +145,60 @@ const Career = () => {
           phone: '',
           experience: '',
         });
-      
+
         var successMsg = 'Form data submitted successfully';
-      
+
         // Append success message to the console
         console.log(successMsg);
-      
-        // Display success message in UI (replace 'yourElementId' with the actual element ID)
-        document.getElementById('successMsg').innerText = successMsg;
 
+        // Display success message in UI (replace 'successMsg' with the actual element ID)
+        document.getElementById('successMsg').innerText = successMsg;
       } else {
         console.error('Failed to submit form data');
       }
     } catch (error) {
       console.error('Error:', error);
     }
-  };
+  }
+};
      
 
   const CareerApi = [
       {
           id: 1,
-          position: "React Developer",
+          position: "MERN Stack Developer",
           experience: "2 years",
-          description: "We are seeking an experienced React Developer to join our team. The ideal candidate should have a strong background in front-end development with proficiency in ReactJS and related technologies."
+          vacancies:"2",
+          education: "Any Graduate - Any Specialization",
+          roleCategory: "Web Developing, Backend",
+          description: "Develop interactive, user-friendly applications using the latest frameworks. Translate designs and wireframes into high quality and responsive screens. Developing Front-End and Back-end Web Application. API design, creation and integrations."
       },
       {
           id: 2,
           position: "CMS Developer",
           experience: "2 years",
-          description: "Join our dynamic team as a React Developer and contribute to the development of innovative web applications. This role requires a solid understanding of ReactJS, JavaScript, HTML, and CSS."
+          vacancies:"2",
+          education: "Any Graduate - Any Specialization",
+          roleCategory: "Web Developing, Backend",
+          description: "Join our dynamic team as a CMS Developer and contribute to the development of innovative web applications. This role requires a solid understanding of WordPress, Shopify, JavaScript, HTML, and CSS. Also any other CMS."
       },
       {
           id: 3,
-          position: "PHP Developer",
-          experience: "2 years",
-          description: "Are you passionate about building responsive and user-friendly web applications? We are looking for a skilled React Developer to collaborate with our team and deliver high-quality software solutions."
+          position: "Business Development Executive (BDE)",
+          experience: "2+ years",
+          vacancies:"3",
+          education: "Any Graduate - Any Specialization, B.Tech/B.E. - Any Specialization",
+          roleCategory: "Pre sales",
+          description: "As a BDE one should have clear understanding of Technical requirements and the time-frame to be worked on while converting clients both Online(e.g. Upwork, Guru, Freelancer etc.) and offline (through various public directories, direct, telephonic ) The Business Development Executive should be capable and aware of International Sales and International Marketing. Client Interaction, Negotiations, Closing the deal. Excellent communication skills both verbal and written. Able to set up strong portfolios."
       },
       {
           id: 4,
-          position: "Laravel Developer",
-          experience: "2 years",
-          description: "Are you passionate about building responsive and user-friendly web applications? We are looking for a skilled React Developer to collaborate with our team and deliver high-quality software solutions."
+          position: " Node JS Developer",
+          experience: "2+ years",
+          vacancies:"2",
+          education: "Any Graduate - Any Specialization",
+          roleCategory: "Web Developing, Backend",
+          description: "Work with Angular2, NodeJS, Meteor, and MongoDB as the stack to develop newer functionalities for our platform. Deploy application on Aron Web Solutions Google Cloud infrastructure. Monitor the application regularly and fix bugs. Work with team to create scalable and robust infrastructure from experts. Strong knowledge."
       } 
   ];
 
@@ -231,8 +247,11 @@ const Career = () => {
                   <h3>{job.position} <span><i className="fa fa-plus" aria-hidden="true"></i></span></h3>
                   {openId === job.id && (
                     <>
-                      <p><strong>Experience:</strong> {job.experience}</p>
-                      <p>{job.description}</p>
+                      <p>{job.description}</p> 
+                      <p><strong>Education: </strong>{job.education}</p>
+                      <p><strong>Role Category: </strong>{job.roleCategory}</p> 
+                      <p><strong>Experience: </strong>{job.experience}</p> 
+                      <p><strong>Vacancies: </strong>{job.vacancies}</p> 
                     </>
                   )}
                 </div>

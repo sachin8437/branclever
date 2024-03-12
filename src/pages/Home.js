@@ -1,6 +1,6 @@
 import React from 'react'
 import Banner from '../components/Banner'
-import PlatForms from '../components/PlatForms'
+// import PlatForms from '../components/PlatForms'
 //import FruitsCarousel from '../components/FruitsCarousel';
 //import Activity from '../components/Activity';
 import TestimonialCarousel from '../components/TestimonialCarousel';
@@ -15,12 +15,12 @@ import Faq from '../components/Faq';
 
 const Home = () => {
    
-    const columnImages = [
-      process.env.PUBLIC_URL + '/images/frelancer.png',
-      process.env.PUBLIC_URL + '/images/up-work.png',
-      process.env.PUBLIC_URL + '/images/pph.png',
-      process.env.PUBLIC_URL + '/images/guru.png',
-    ];
+    // const columnImages = [
+    //   process.env.PUBLIC_URL + '/images/frelancer.png',
+    //   process.env.PUBLIC_URL + '/images/up-work.png',
+    //   process.env.PUBLIC_URL + '/images/pph.png',
+    //   process.env.PUBLIC_URL + '/images/guru.png',
+    // ];
 
     // const backgroundImage = [
     //   process.env.PUBLIC_URL + '/images/develop.jpg',
@@ -57,16 +57,18 @@ const Home = () => {
           {/* <FruitsCarousel bgImage={backgroundImage} /> */}
           
           <OurServices />
-          <PlatForms images={columnImages} />
+          {/* <PlatForms images={columnImages} /> */}
           <Tabs />
           {/* <Activity /> */}
           
           <TestimonialCarousel /> 
           <Icons />
           <DatabaseSec />
-          <ContactForm /> 
-          <Faq />
+          <div className='faq_Contact_Sec'>
+            <Faq />
+            <ContactForm /> 
             
+          </div>  
         </div>
        
       </>

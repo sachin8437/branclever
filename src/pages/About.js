@@ -36,12 +36,12 @@ export default class About extends Component {
           <Counter />
         </div>
         <section>
-          <div class="founder_section">
-            <div class="founder_section_content">
-              <div class="img_of_founder">
+          <div className="founder_section">
+            <div className="founder_section_content">
+              <div className="img_of_founder">
                   <img src={ownerImg} alt='' />	   
                 </div>
-                <div class="content_of_founder">
+                <div className="content_of_founder">
                   <h2>Founder & CEO</h2>
                   <p>Founder & MD Mr. Manish Verma Brandclever, an India-based IT software company, on March 6th, 2022. Brandclever specialises in HTML5/CSS3/WordPress/Custom PHP/Shopify/Wix websites that are innovative, responsive (mobile friendly), and effective. From the year 2022, we completed almost 450 projects. The majority of our customers are regulars. You may inquire as to how we manage this, as well as why we have so many long-term clientele. It’s a really straightforward procedure. We understand that you have a number of options when it comes to web hosting. We also understand how challenging it may be to switch web vendors. As a result, we provide personalised web design and development services to each of our customers</p> 
                   <img src={ownersign} className='signature' alt="Signature" />

@@ -13,8 +13,13 @@ const Banner = () => {
             Your browser does not support the video tag.
         </video>
         <div className="content">
-            <h1>Welcome to Brandclever!</h1>
-            <p>Brandclever: Elevate Your Identity, Ignite Your Impact</p>
+            <h1>​​Meet the Digital Drivers of Global Disruptors</h1>
+            <p>We catalyze business growth by reimagining digital experiences that
+             conquer complex challenges through innovation and agility.</p>
+             <div className='exp_btn'>
+                <a href='#'>Consult Our Experts <i class="fa fa-chevron-right" aria-hidden="true"></i>
+</a>
+             </div>
         </div>
       
     </div>

@@ -28,6 +28,14 @@ const Tachnology = ({ techImages }) => {
         breakpoint: 768,
         settings: {
           vertical: false,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 580,
+        settings: {
+          vertical: false,
           slidesToShow: 1,
           slidesToScroll: 1,
         },

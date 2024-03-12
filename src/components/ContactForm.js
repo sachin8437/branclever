@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import contactBG from './Images/contact-us.jpg';
+//import contactBG from './Images/contact-us.jpg';
 //contact-us.jpg
 
 export default class ContactForm extends Component {
@@ -104,35 +104,26 @@ addFormData = (evt) => {
   
   render() {
     const { errors } = this.state;
-    const divStyle = {
-      background: `url(${contactBG})`,
-      backgroundSize: 'cover',  // Adjust this property based on your design needs
-      // Add other background-related properties if needed
-    };
+    // const divStyle = {
+    //   background: `url(${contactBG})`,
+    //   backgroundSize: 'cover',  // Adjust this property based on your design needs
+    //   // Add other background-related properties if needed
+    // };
 
     return (
-      <>
-        <div id="contactForm" className="contactForm p-5" style={divStyle}>
-          <div className="container">
-            <div className="contactForm-inner row">
+      <> {/* style={divStyle}  */}
+        <div id="contactForm" className="contactForm p-5" >
+          <div className="container2">
+            <div className="contactForm-inner">
             
               {/* ... (your existing code) */}
-                <div className='form-left col-6'>
+                {/* <div className='form-left col-6'>
+                 
+                </div>    */}
+              <div className="form-right">
+                {/* ... (your existing code) */}
                   <h3>GET IN TOUCH</h3>
                   <p>Our Subject Matter Experts Are Change Catalysts. Book Your First Presentation with Our Experts Today.</p>
-                  
-                    {/* <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3430.25466516471!2d76.68769711057607!3d30.711240324488735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fef8cd36051e7%3A0xdfdada19c12e600f!2sBrandclever!5e0!3m2!1sen!2sin!4v1704717983478!5m2!1sen!2sin" 
-                    width="600"
-                    height="450" 
-                    allowFullScreen="" 
-                    title="Brandclever"
-                    loading="lazy" 
-                    referrerPolicy="no-referrer-when-downgrade"
-                    ></iframe> */}
-                </div>   
-              <div className="form-right  col-6">
-                {/* ... (your existing code) */}
                  <form ref={this.myFormRef} onSubmit={this.addFormData}>
                   <div className="form-group">
                     <input

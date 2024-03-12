@@ -123,7 +123,7 @@ export default class Gallery extends Component {
       { id: 'tab4', label: 'Christmas Celebrations' },
       { id: 'tab5', label: 'Diwali Celebrations' },
       { id: 'tab6', label: 'Holi Celebrations' }, 
-      { id: 'tab8', label: 'Videos' },
+      //{ id: 'tab8', label: 'Videos' },
     ];
 
     const tabContents = {

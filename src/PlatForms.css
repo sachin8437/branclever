@@ -25,5 +25,8 @@
 }
 
 .technology-main {
-  padding: 57px 18px 31px !important;
+  padding: 35px 0px 70px !important;
+  width: 100%;
+  max-width: 1170px !important;
+  margin: 0 auto;
 }

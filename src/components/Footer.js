@@ -33,19 +33,16 @@ const Footer = () => {
                 </div>
                 <ul className='social_media-icon'> 
                     <li>
-                        <Link to="https://www.facebook.com/brandclever.in/"><i className="fa fa-facebook-square" aria-hidden="true"></i></Link>
+                        <Link to="https://www.facebook.com/brandclever.in/" target="_blank"><i className="fa fa-facebook-square" aria-hidden="true"></i></Link>
                     </li>
                     <li>
-                        <Link to="https://www.instagram.com/brandclever.in/"><i className="fa fa-instagram" aria-hidden="true"></i></Link>
+                        <Link to="https://www.instagram.com/brandclever.in/" target="_blank"><i className="fa fa-instagram" aria-hidden="true"></i></Link>
                     </li>
                     <li>
-                        <Link to="https://www.youtube.com/@Brandclever"><i className="fa fa-youtube-play" aria-hidden="true"></i></Link>
-                    </li>
+                        <Link to="https://www.youtube.com/@Brandclever" target="_blank"><i className="fa fa-youtube-play" aria-hidden="true"></i></Link>
+                    </li> 
                     <li>
-                        <Link to="/"><i className="fa fa-twitter-square" aria-hidden="true"></i></Link>
-                    </li>
-                    <li>
-                        <Link to="https://www.linkedin.com/company/brandclever/"><i className="fa fa-linkedin-square" aria-hidden="true"></i></Link>
+                        <Link to="https://www.linkedin.com/company/brandclever/" target="_blank"><i className="fa fa-linkedin-square" aria-hidden="true"></i></Link>
                     </li>
                 </ul> 
 
@@ -83,13 +80,13 @@ const Footer = () => {
                             <Link to="/">Digital Marketing</Link>
                         </li> 
                         <li>
-                            <Link to="/">Graphic Design</Link>
+                            <Link to="/">Graphic Designing</Link>
                         </li>
                         <li>
                             <Link to="/">Mern Stack</Link>
                         </li>  
                         <li>
-                            <Link to="/">Framework</Link>
+                            <Link to="/">Frameworks</Link>
                         </li>
                     </ul>  
             </div> 
@@ -97,7 +94,7 @@ const Footer = () => {
                 <h3>CONTACT US</h3> 
                 <div className='footer-address'><span><i className="fa fa-map-marker" aria-hidden="true"></i></span><span>4th Floor, F-301, Bansal Tower, Phase 8B, Industrial Area, Sector 74, Brandclever, Sahibzada Ajit Singh Nagar, Punjab 160055</span> </div>
                 <div className='footer-phone'><Link to='tel:+919872711866'><span><i className="fa fa-phone-square" aria-hidden="true"></i></span>9872711866</Link></div>
-                <div className='footer-email'><Link to='mailto:hr@brandclever.in'><span><i className="fa fa-envelope" aria-hidden="true"></i></span>hr@brandclever.in</Link></div>  
+                <div className='footer-email'><Link to='mailto:career@brandclever.in'><span><i className="fa fa-envelope" aria-hidden="true"></i></span>career@brandclever.in</Link></div>  
             </div>
         </div>
         <hr></hr>

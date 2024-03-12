@@ -87,17 +87,27 @@ export default class PlacementForm extends Component {
         });
   
         // Log answersData to check if it's correct
-        console.log(this.state.answersData);
+       // console.log(this.state.answersData);
       }
   
       axios
         .post('https://developer.brandclever.in/brand/admin/form/placementForm.php', formData)
         .then((res) => {
           console.log(res.data);
+          document.getElementById('successMsg').innerText = res.data.data; 
+          // Reset form fields
           this.myFormRef.current.reset();
+
+          // Show the first step after 5 seconds
+          setTimeout(() => {
+            this.setState({ currentStep: 1 });
+          }, 5000);
+
         })
         .catch((error) => {
           console.error(error.response.data.error);
+         // var msgError = error.response.data.error.errorMSG;
+          document.getElementById('errorMsg').innerText = "Email is already exist! ";
         });
     }
   };
@@ -254,7 +264,7 @@ export default class PlacementForm extends Component {
 		  <div className="error-message">{errors.selectedProfile}</div>
 		</div>
         <div className="form-fields-button dfd">
-          <button class="Next_btn_traning_and_placement button_slide slide_down" type="button" onClick={() => this.moveToStep(2)}>
+          <button className="Next_btn_traning_and_placement button_slide slide_down" type="button" onClick={() => this.moveToStep(2)}>
             Next
           </button>
         </div>
@@ -870,24 +880,25 @@ export default class PlacementForm extends Component {
 
     return (
       <>
-        <div className="questionAnswer-main">
+        <h3 className='questionLable'>File the questions ( Optional )</h3>
+        <div className="questionAnswer-main"> 
           {questionsToShow.map((profileQuestion) => (
             <div key={profileQuestion.id} className="item">
-              {/* ... (render profile-specific questions) */}
+              {/* ... (render profile-specific questions) */} 
 			  <div className="question">
 				<label>{profileQuestion.id}. {profileQuestion.question}</label>
 			  </div>
 			  <div className="answer">
 				<input type="radio" className="profile_Q ans_Qus" id={`selectedAnsO1_${profileQuestion.id}`} name={`selectedAns-${profileQuestion.id}`} value={profileQuestion.answerOPT1} />
-				<label for={`selectedAnsO1_${profileQuestion.id}`}>{profileQuestion.answerOPT1}</label>
+				<label htmlFor={`selectedAnsO1_${profileQuestion.id}`}>{profileQuestion.answerOPT1}</label>
 			  </div>
 			  <div className="answer">
 				<input type="radio" className="profile_Q ans_Qus" id={`selectedAnsO2_${profileQuestion.id}`} name={`selectedAns-${profileQuestion.id}`} value={profileQuestion.answerOPT2} />
-				<label for={`selectedAnsO2_${profileQuestion.id}`}>{profileQuestion.answerOPT2}</label>
+				<label htmlFor={`selectedAnsO2_${profileQuestion.id}`}>{profileQuestion.answerOPT2}</label>
 			  </div>
 			  <div className="answer">
 				<input type="radio" className="profile_Q ans_Qus" id={`selectedAnsO3_${profileQuestion.id}`} name={`selectedAns-${profileQuestion.id}`} value={profileQuestion.answerOPT3} />
-				<label for={`selectedAnsO3_${profileQuestion.id}`}>{profileQuestion.answerOPT3}</label>
+				<label htmlFor={`selectedAnsO3_${profileQuestion.id}`}>{profileQuestion.answerOPT3}</label>
 			  </div>
             </div>
           ))}
@@ -905,7 +916,7 @@ export default class PlacementForm extends Component {
     if (currentStep === 2) {
       return (
         <div className="form-fields-button back-btn">
-          <button class="back_btn_placement_traning button_slide slide_down" type="button" onClick={() => this.moveToStep(1)}>
+          <button className="back_btn_placement_traning button_slide slide_down" type="button" onClick={() => this.moveToStep(1)}>
             Back
           </button>
         </div>
@@ -932,7 +943,8 @@ export default class PlacementForm extends Component {
                 {currentStep === 2 && this.renderStep2()}
 
                 {this.renderBackButton()}
-  
+                <div id="successMsg"></div>
+                <div id="errorMsg"></div>
               </form>
             </div>
           </div>
